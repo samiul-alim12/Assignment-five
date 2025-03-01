@@ -7,6 +7,9 @@ document.getElementById("complete-btn-1").addEventListener("click",function(){
     const convertTaskNumber = convertStringToNumber("task-number");
     const activityBox = document.getElementById("activity-box")
     const cardHeading = document.getElementById("card-heading-1").innerText;
+    let date = new Date();
+    let currentTime = date.toLocaleTimeString();
+
     
     if(getBtn){
         const subtract = convertedNumber - 1;
@@ -16,7 +19,7 @@ document.getElementById("complete-btn-1").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at 12:48:15 PM</p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentTime}</p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
@@ -30,7 +33,8 @@ document.getElementById("complete-btn-2").addEventListener("click",function(){
     const convertTaskNumber = convertStringToNumber("task-number");
     const activityBox = document.getElementById("activity-box")
     const cardHeading = document.getElementById("card-heading-2").innerText;
-    
+    let date = new Date();
+    let currentTime = date.toLocaleTimeString(); 
     if(getBtn){
         const subtract = convertedNumber - 1;
         document.getElementById("assigned-number").innerText = subtract
@@ -39,7 +43,7 @@ document.getElementById("complete-btn-2").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at 12:48:15 PM</p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentTime}</p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
@@ -53,7 +57,8 @@ document.getElementById("complete-btn-3").addEventListener("click",function(){
     const convertTaskNumber = convertStringToNumber("task-number");
     const activityBox = document.getElementById("activity-box")
     const cardHeading = document.getElementById("card-heading-3").innerText;
-    
+    let date = new Date();
+    let currentTime = date.toLocaleTimeString(); 
     if(getBtn){
         const subtract = convertedNumber - 1;
         document.getElementById("assigned-number").innerText = subtract
@@ -62,7 +67,7 @@ document.getElementById("complete-btn-3").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at 12:48:15 PM</p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentTime} </p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
@@ -76,7 +81,8 @@ document.getElementById("complete-btn-4").addEventListener("click",function(){
     const convertTaskNumber = convertStringToNumber("task-number");
     const activityBox = document.getElementById("activity-box")
     const cardHeading = document.getElementById("card-heading-4").innerText;
-    
+    let date = new Date();
+    let currentTime = date.toLocaleTimeString(); 
     if(getBtn){
         const subtract = convertedNumber - 1;
         document.getElementById("assigned-number").innerText = subtract
@@ -85,7 +91,7 @@ document.getElementById("complete-btn-4").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at 12:48:15 PM</p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentTime} </p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
@@ -99,7 +105,8 @@ document.getElementById("complete-btn-5").addEventListener("click",function(){
     const convertTaskNumber = convertStringToNumber("task-number");
     const activityBox = document.getElementById("activity-box")
     const cardHeading = document.getElementById("card-heading-5").innerText;
-    
+    let date = new Date();
+    let currentTime = date.toLocaleTimeString(); 
     if(getBtn){
         const subtract = convertedNumber - 1;
         document.getElementById("assigned-number").innerText = subtract
@@ -108,7 +115,7 @@ document.getElementById("complete-btn-5").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at 12:48:15 PM</p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentDate} </p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
@@ -123,7 +130,8 @@ document.getElementById("complete-btn-6").addEventListener("click",function(){
     const convertTaskNumber = convertStringToNumber("task-number");
     const activityBox = document.getElementById("activity-box")
     const cardHeading = document.getElementById("card-heading-6").innerText;
-    
+    let date = new Date();
+    let currentTime = date.toLocaleTimeString(); 
     if(getBtn){
         const subtract = convertedNumber - 1;
         document.getElementById("assigned-number").innerText = subtract
@@ -132,7 +140,7 @@ document.getElementById("complete-btn-6").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at 12:48:15 PM</p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentTime} </p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
@@ -144,3 +152,8 @@ document.getElementById("clear-history-btn").addEventListener("click",function()
     const activity = document.getElementById("activity-box");
     activity.remove()
 })
+
+// current date section
+let date = new Date();
+let currentDate = date.toDateString();
+document.getElementById("current-date").innerText = currentDate
