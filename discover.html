@@ -30,7 +30,7 @@
                     <h2 class=" pl-3 text-3xl">Dev<span class=" font-bold">Board</span></h2>
                 </div>
                 <div>
-                    <button class=" bg-blue-700 px-3 py-2 text-white rounded-lg">Back To Desk</button>
+                    <button id="back-to-desk-btn" class=" bg-blue-700 px-3 py-2 text-white rounded-lg">Back To Desk</button>
                 </div>
                 
             </div>
@@ -70,12 +70,14 @@
                     <h3>
                         difference between innerText, innerHTML and textContent :
                     </h3>
-                    <p><u class=" font-medium">innerHTML :</u> innerHTML property used to get access or modify the content of an element</p>
+                    <p><u class=" font-medium">innerHTML :</u> innerHTML প্রপার্টি ব্যবহৃত হয় প্রধানত HTML কন্টেন্ট অ্যাক্সেস এবং পরিবর্তন করার জন্য। এটি সাধারণত ব্যবহার করা হয় যখন একটি HTML উপাদানের ভিতরের কন্টেন্ট (যেমন টেক্সট, ট্যাগ, অথবা অন্য কোন HTML উপাদান) নিতে বা সেট করতে হয়।</p>
                     <p>
-                       <u class=" font-medium"> innerText :</u> innerText property used to get access or modify the visible text content of an element.
+                       <u class=" font-medium"> innerText :</u> 
+                       innerText ব্যবহার করে একটি এলিমেন্টের শুধুমাত্র দৃশ্যমান টেক্সট অ্যাক্সেস করা যায়। innerText ব্যবহার করে একটি এলিমেন্টের ভিতরের টেক্সট ও পরিবর্তন করা যায়.
                     </p>
                     <p>
-                        <u class=" font-medium">textContent:</u> text content property used to get the text content of an element,  ignoring any html tags.
+                        <u class=" font-medium">textContent:</u> textContent ব্যবহার করে একটি এলিমেন্টের সম্পূর্ণ টেক্সট পাওয়া যায় । এমনকি যদি সেটি সিএসএস দিয়ে লুকানো থাকে যেমন  (display: none বা visibility: hidden) তারপরও সেটি পাওয়া যায় । এটি এইচটিএমএল ট্যাগ উপেক্ষা করে শুধুমাত্র
+                        টেক্সট রিটার্ন করে
                     </p>
                    </div>
                     
@@ -120,5 +122,12 @@
             </div>
             </section>
       </main>
+
+      <script>
+        document.getElementById("back-to-desk-btn").addEventListener("click",function(){
+            window.location.href = "index.html"
+        })
+      </script>
+
 </body>
 </html>
