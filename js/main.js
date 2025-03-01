@@ -150,10 +150,19 @@ document.getElementById("complete-btn-6").addEventListener("click",function(){
 // clear history section
 document.getElementById("clear-history-btn").addEventListener("click",function(){
     const activity = document.getElementById("activity-box");
-    activity.remove()
+    activity.innerText = ''
 })
 
 // current date section
 let date = new Date();
 let currentDate = date.toDateString();
 document.getElementById("current-date").innerText = currentDate
+
+// dynamically color change
+
+document.getElementById("color-image").addEventListener("click",function(){
+    
+    const color = ['violet','orange','green','Chartreuse',"Coral","Khaki","Maroon","Pink"];
+    const randomColor = parseInt(Math.random()*color.length)
+    document.body.style.backgroundColor = color [randomColor]
+})
