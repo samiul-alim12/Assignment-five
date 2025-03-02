@@ -135,7 +135,7 @@ document.getElementById("complete-btn-5").addEventListener("click",function(){
     }
     const newPara = document.createElement("p");
     newPara.innerHTML =`
-    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentDate} </p>
+    <p class=" bg-green-50 rounded-lg p-2 "> You have Complete The Task ${cardHeading} at ${currentTime} </p>
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
