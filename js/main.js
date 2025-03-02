@@ -23,7 +23,12 @@ document.getElementById("complete-btn-1").addEventListener("click",function(){
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
-    getBtn.style.backgroundColor = "#C0C0C0"
+    getBtn.style.backgroundColor = "#C0C0C0";
+    const assignedNumber = document.getElementById("assigned-number").innerText;
+    assigned = parseInt(assignedNumber)
+    if(assigned === 0){
+    alert("congrats you have completed all the task")
+    }
 })
 // 2nd button
 document.getElementById("complete-btn-2").addEventListener("click",function(){
@@ -47,7 +52,12 @@ document.getElementById("complete-btn-2").addEventListener("click",function(){
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
-    getBtn.style.backgroundColor = "#C0C0C0"
+    getBtn.style.backgroundColor = "#C0C0C0";
+    const assignedNumber = document.getElementById("assigned-number").innerText;
+    assigned = parseInt(assignedNumber)
+    if(assigned === 0){
+    alert("congrats you have completed all the task")
+    }
 })
 // 3rd button
 document.getElementById("complete-btn-3").addEventListener("click",function(){
@@ -71,7 +81,12 @@ document.getElementById("complete-btn-3").addEventListener("click",function(){
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
-    getBtn.style.backgroundColor = "#C0C0C0"
+    getBtn.style.backgroundColor = "#C0C0C0";
+    const assignedNumber = document.getElementById("assigned-number").innerText;
+    assigned = parseInt(assignedNumber)
+    if(assigned === 0){
+    alert("congrats you have completed all the task")
+    }
 })
 // 4th button
 document.getElementById("complete-btn-4").addEventListener("click",function(){
@@ -95,7 +110,12 @@ document.getElementById("complete-btn-4").addEventListener("click",function(){
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
-    getBtn.style.backgroundColor = "#C0C0C0"
+    getBtn.style.backgroundColor = "#C0C0C0";
+    const assignedNumber = document.getElementById("assigned-number").innerText;
+    assigned = parseInt(assignedNumber)
+    if(assigned === 0){
+    alert("congrats you have completed all the task")
+    }
 })
 // 5th button
 document.getElementById("complete-btn-5").addEventListener("click",function(){
@@ -119,12 +139,16 @@ document.getElementById("complete-btn-5").addEventListener("click",function(){
     `
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
-    getBtn.style.backgroundColor = "#C0C0C0"
+    getBtn.style.backgroundColor = "#C0C0C0";
+    const assignedNumber = document.getElementById("assigned-number").innerText;
+    assigned = parseInt(assignedNumber)
+    if(assigned === 0){
+    alert("congrats you have completed all the task")
+    }
 })
 // 6th button
 document.getElementById("complete-btn-6").addEventListener("click",function(){
     alert("Board Update Successfully")
-    alert("Congrats You Have Completed All The Current Task ")
     const getBtn =document.getElementById("complete-btn-6")
     const convertedNumber =  convertStringToNumber("assigned-number")
     const convertTaskNumber = convertStringToNumber("task-number");
@@ -132,6 +156,8 @@ document.getElementById("complete-btn-6").addEventListener("click",function(){
     const cardHeading = document.getElementById("card-heading-6").innerText;
     let date = new Date();
     let currentTime = date.toLocaleTimeString(); 
+    // const assignedNumber = document.getElementById("assigned-number").innerText;
+    
     if(getBtn){
         const subtract = convertedNumber - 1;
         document.getElementById("assigned-number").innerText = subtract
@@ -145,6 +171,12 @@ document.getElementById("complete-btn-6").addEventListener("click",function(){
     activityBox.appendChild(newPara);
     getBtn.setAttribute("disabled",true)
     getBtn.style.backgroundColor = "#C0C0C0"
+    const assignedNumber = document.getElementById("assigned-number").innerText;
+    assigned = parseInt(assignedNumber)
+    if(assigned === 0){
+    alert("congrats you have completed all the task")
+    } 
+
 })
 
 // clear history section
@@ -166,3 +198,5 @@ document.getElementById("color-image").addEventListener("click",function(){
     const randomColor = parseInt(Math.random()*color.length)
     document.body.style.backgroundColor = color [randomColor]
 })
+
+// 6th card double alert 
